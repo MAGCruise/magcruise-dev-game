@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>magcruise-dev-game</artifactId>
+	<name>magcruise-dev-game</name>
+	<version>0.0.1-SNAPSHOT</version>
+	<parent>
+		<groupId>org.magcruise</groupId>
+		<artifactId>magcruise-parent</artifactId>
+		<version>0.0.1</version>
+	</parent>
+	<repositories>
+		<repository>
+			<id>nkjmlab-public</id>
+			<url>http://maven.nkjmlab.org/nexus/content/groups/public</url>
+		</repository>
+	</repositories>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.magcruise</groupId>
+			<artifactId>magcruise-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.magcruise</groupId>
+			<artifactId>magcruise-langrid</artifactId>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-assembly-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+</project>

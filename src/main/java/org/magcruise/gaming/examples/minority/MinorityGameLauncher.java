@@ -1,17 +1,17 @@
 package org.magcruise.gaming.examples.minority;
 
 import org.magcruise.gaming.examples.minority.resource.MinorityGameResourceLoader;
-import org.magcruise.gaming.model.sys.GameLauncher;
+import org.magcruise.gaming.manager.session.GameSession;
 
 public class MinorityGameLauncher {
 
 	public static void main(String[] args) {
 
-		GameLauncher launcher = new GameLauncher(
+		GameSession launcher = new GameSession(
 				MinorityGameResourceLoader.class);
 		launcher.addGameDefinitionInResource("game-definition.scm");
 		launcher.useSwingGui();
-		launcher.run();
+		launcher.start();
 
 	}
 

@@ -7,7 +7,7 @@
 	<parent>
 		<groupId>org.magcruise</groupId>
 		<artifactId>magcruise-parent</artifactId>
-		<version>0.0.1</version>
+		<version>0.0.2-SNAPSHOT</version>
 	</parent>
 	<repositories>
 		<repository>
@@ -15,6 +15,11 @@
 			<url>http://maven.nkjmlab.org/nexus/content/groups/public</url>
 		</repository>
 	</repositories>
+	<scm>
+		<connection>scm:git:git@github.com:magcruise/magcruise-dev-game.git</connection>
+		<url>https://github.com/magcruise/magcruise-dev-game</url>
+		<tag>HEAD</tag>
+	</scm>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -24,18 +29,11 @@
 		<dependency>
 			<groupId>org.magcruise</groupId>
 			<artifactId>magcruise-core</artifactId>
+			<version>0.0.2-SNAPSHOT</version><!--$NO-MVN-MAN-VER$-->
 		</dependency>
 		<dependency>
 			<groupId>org.magcruise</groupId>
 			<artifactId>magcruise-langrid</artifactId>
 		</dependency>
 	</dependencies>
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-assembly-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
 </project>

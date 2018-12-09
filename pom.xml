@@ -12,7 +12,7 @@
 	<repositories>
 		<repository>
 			<id>nkjmlab-public</id>
-			<url>http://maven.nkjmlab.org/nexus/content/groups/public</url>
+			<url>https://maven.nkjmlab.org/nexus/content/groups/public</url>
 		</repository>
 	</repositories>
 	<scm>
@@ -29,7 +29,6 @@
 		<dependency>
 			<groupId>org.magcruise</groupId>
 			<artifactId>magcruise-core</artifactId>
-			<version>0.0.2-SNAPSHOT</version><!--$NO-MVN-MAN-VER$-->
 		</dependency>
 		<dependency>
 			<groupId>org.magcruise</groupId>
